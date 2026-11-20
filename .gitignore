@@ -1,0 +1,9 @@
+# Variáveis de ambiente (apenas o exemplo é versionado)
+.env
+.env.*
+!.env.example
+
+# Clones independentes (cada um com seu próprio .git)
+frontend/
+backend/
+mobile/
