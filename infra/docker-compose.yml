@@ -18,6 +18,7 @@ services:
     networks: [easyeats_net]
 
   backend:
+    image: zacml/easy-eats-api:1.0
     build:
       context: ../backend
       dockerfile: ../infra/Dockerfile.backend
@@ -42,6 +43,7 @@ services:
     networks: [easyeats_net]
 
   frontend:
+    image: zacml/easy-eats-web:1.0
     build:
       context: ../frontend
       dockerfile: ../infra/Dockerfile.frontend
